@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block head %}
+{{ super() }} {% endblock %} {% block content %}
+<div class="article-card">
+  <h2 class="card-title">The title</h2>
+  <p class="card-date">06/03/2025</p>
+  <p class="card-preview">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil eius
+    doloremque mollitia at hic voluptas ut vitae...
+  </p>
+  <a href="/post" class="card-link">Read more</a>
+</div>
+{% endblock %}

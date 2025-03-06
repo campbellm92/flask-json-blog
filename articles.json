@@ -1,0 +1,10 @@
+{
+  "id": "article-001",
+  "title": "This is the title",
+  "date": "05.08.1992",
+  "content": [
+    "This is the first paragraph of my blog post. It introduces the topic and sets the stage for the discussion.",
+    "Here is the second paragraph, where I dive deeper into the subject, providing more details and examples to help clarify the points made.",
+    "Finally, the third paragraph wraps up the discussion with conclusions and potential next steps for further reading."
+  ]
+}
