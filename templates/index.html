@@ -1,12 +1,16 @@
-{% extends "base.html" %} {% block title %}Home{% endblock %} {% block head %}
-{{ super() }} {% endblock %} {% block content %}
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+{% for article in articles %}
 <div class="article-card">
-  <h2 class="card-title">The title</h2>
-  <p class="card-date">06/03/2025</p>
-  <p class="card-preview">
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil eius
-    doloremque mollitia at hic voluptas ut vitae...
+  <h2 class="card-title">{{article.title}}</h2>
+  <p class="card-date">{{article.published_on}}</p>
+  <p class="card-content-preview">
+    {{article.content}}
   </p>
-  <a href="/post" class="card-link">Read more</a>
+  <a href="/post/{{article.id}}" class="card-link">Read more</a>
 </div>
+{% endfor %}
 {% endblock %}
