@@ -1,10 +1,22 @@
-{
-  "id": "article-001",
-  "title": "This is the title",
-  "date": "05.08.1992",
-  "content": [
-    "This is the first paragraph of my blog post. It introduces the topic and sets the stage for the discussion.",
-    "Here is the second paragraph, where I dive deeper into the subject, providing more details and examples to help clarify the points made.",
-    "Finally, the third paragraph wraps up the discussion with conclusions and potential next steps for further reading."
-  ]
-}
+[
+  {
+    "id": "article-001",
+    "title": "This is the title",
+    "published_on": "05.08.1992",
+    "content": [
+      "This is the first paragraph of my blog post. It introduces the topic and sets the stage for the discussion.",
+      "Here is the second paragraph, where I dive deeper into the subject, providing more details and examples to help clarify the points made.",
+      "Finally, the third paragraph wraps up the discussion with conclusions and potential next steps for further reading."
+    ]
+  },
+  {
+    "id": "article-002",
+    "title": "A Journey Through Time",
+    "published_on": "1995-11-23",
+    "content": [
+      "Time travel has long been a fascinating concept in science fiction and philosophy.",
+      "This article explores various theories and cultural depictions of time travel over the decades.",
+      "The discussion concludes with thoughts on how our understanding of time might evolve in the future."
+    ]
+  }
+]
