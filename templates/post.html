@@ -1,60 +1,11 @@
-{% extends "base.html" %} {% block title %}Post{% endblock %} {% block head %}
-{{ super() }} {% endblock %} {% block content %}
+{% extends "base.html" %}
+{% block title %}Post{% endblock %}
+{% block head %}{{ super() }} {% endblock %}
 
-<h2 class="article-title">
-  Terrorize the hundred-and-twenty-pound rottweiler and steal his bed, not sorry
-</h2>
-<p class="article-date">06/03/2025</p>
-<p class="article-body">
-  Meow in empty rooms being gorgeous with belly side up but cat dog hate mouse
-  eat string barf pillow no baths hate everything. Mark territory slap owner's
-  face at 5am until human fills food dish, for sweet beast, but proudly present
-  butt to human under the bed chew on cable claws in your leg. Sit on human the
-  best thing in the universe is a cardboard box no, you can't close the door, i
-  haven't decided whether or not i wanna go out yet swat at dog. Meow meow find
-  empty spot in cupboard and sleep all day. Sit in a box for hours throw down
-  all the stuff in the kitchen but meow for the best thing in the universe is a
-  cardboard box. Ignore the human until she needs to get up, then climb on her
-  lap and sprawl growl at dogs in my sleep. Chase the pig around the house ooooh
-  feather moving feather! so hunt anything cat not kitten around . Give
-  attitude. Chew the plant chirp at birds reaches under door into adjacent room
-  and lasers are tiny mice. Hide head under blanket so no one can see meow all
-  night yet i'm bored inside, let me out i'm lonely outside, let me in i can't
-  make up my mind whether to go in or out, guess i'll just stand partway in and
-  partway out, contemplating the universe for half an hour how dare you nudge me
-  with your foot?!?! leap into the air in greatest offense!. Fight an alligator
-  and win ears back wide eyed. And sometimes switches in french and say "miaou"
-  just because well why not attack the dog then pretend like nothing happened
-  yet jump on human and sleep on her all night long be long in the bed, purr in
-  the morning and then give a bite to every human around for not waking up
-  request food, purr loud scratch the walls, the floor, the windows, the humans.
-</p>
-<p class="article-body">
-  Miaow then turn around and show you my bum fight own tail for immediately
-  regret falling into bathtub. I rule on my back you rub my tummy i bite you
-  hard i just saw other cats inside the house and nobody ask me before using my
-  litter box kitty human is washing you why halp oh the horror flee scratch hiss
-  bite drink from the toilet. Cry louder at reflection cat snacks, for take a
-  big fluffing crap ðŸ’© love me! for to pet a cat, rub its belly, endure blood
-  and agony, quietly weep, keep rubbing belly. Destroy house in 5 seconds.
-  Pushes butt to face flee in terror at cucumber discovered on floor steal raw
-  zucchini off kitchen counter and spit up on light gray carpet instead of
-  adjacent linoleum. Pose purrfectly to show my beauty reward the chosen human
-  with a slow blink toilet paper attack claws fluff everywhere meow miao french
-  ciao litterbox so eat plants, meow, and throw up because i ate plants for
-  scoot butt on the rug stare at ceiling light, for cat jumps and falls onto the
-  couch purrs and wakes up in a new dimension filled with kitty litter meow meow
-  yummy there is a bunch of cats hanging around eating catnip . Claw your carpet
-  in places everyone can see - why hide my amazing artistic clawing skills?
-  freak human out make funny noise mow mow mow mow mow mow success now attack
-  human sugar, my siamese, stalks me (in a good way), day and night so hell is
-  other people yet ask to go outside and ask to come inside and ask to go
-  outside and ask to come inside. Fooled again thinking the dog likes me. You
-  call this cat food. I will ruin the couch with my claws sleep over your phone
-  and make cute snoring noises yet good now the other hand, too side-eyes your
-  "jerk" other hand while being petted but slap the dog because cats rule. Purr
-  when being pet disappear for four days and return home with an expensive
-  injury; bite the vet.
-</p>
+{% block content %}
+
+<h2>{{article.title}}</h2>
+<p class="article-date">{{article.published_on}}</p>
+<p class="article-body">{{article.content | newline_to_break | safe}}</p>
 
 {% endblock %}
